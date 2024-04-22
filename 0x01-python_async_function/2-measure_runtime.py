@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """2. Measure the runtime"""
 from typing import List, Callable, Coroutine, Any
-
 import asyncio
 from time import time
 wait_n: Callable[[int, int], Coroutine[Any, Any, float]] = __import__(
