@@ -8,18 +8,21 @@ from typing import Dict
 
 
 class TestAccessNestedMap(unittest.TestCase):
+    """A testing class for utils.access_nested_map"""
     @parameterized.expand([
         ({"a": 1}, ("a",), 1),
         ({"a": {"b": 2}}, ("a",), {"b": 2}),
         ({"a": {"b": 2}}, ("a", "b"), 2)
     ])
     def test_access_nested_map(self, nested_map, path, expected):
+        """Method that tests that access_nested_map"""
         self.assertEqual(access_nested_map(nested_map, path), expected)
 
     # __________________________________________________________________________
 
     @parameterized.expand([({}, ("a",)), ({"a": 1}, ("a", "b"))])
     def test_access_nested_map_exception(self, nested_map, path):
+        """Method testing access_nested_map exception"""
         with self.assertRaises(KeyError):
             access_nested_map(nested_map, path)
 
@@ -27,6 +30,7 @@ class TestAccessNestedMap(unittest.TestCase):
 
 
 class TestGetJson(unittest.TestCase):
+    """Implementation to test utils.get_json method"""
     @parameterized.expand([
         ("http://example.com", {"payload": True}),
         ("http://holberton.io", {"payload": False})
@@ -34,6 +38,7 @@ class TestGetJson(unittest.TestCase):
     @patch('utils.requests.get')
     def test_get_json(self, test_url: str, test_payload: Dict,
                       mock_get: Mock) -> None:
+        """Tests that utils.get_json returns expected result"""
         # Create response mock
         mock_response = Mock()
 
