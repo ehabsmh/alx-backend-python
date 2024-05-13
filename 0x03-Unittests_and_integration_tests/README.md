@@ -2,7 +2,7 @@
   <img src="https://assets.imaginablefutures.com/media/images/ALX_Logo.max-200x150.png" />
 </p>
 
-# This project incorporates a comprehensive testing strategy that leverages both unit tests and integration tests to ensure the quality and reliability of the back-end code.
+# This project incorporates a comprehensive testing strategy that leverages both unit tests and integration tests to ensure the quality and reliability of the back-end code. `#f03c15`
 
 ## Tasks
 
