@@ -2,11 +2,11 @@
   <img src="https://assets.imaginablefutures.com/media/images/ALX_Logo.max-200x150.png" />
 </p>
 
-# This project incorporates a comprehensive testing strategy that leverages both unit tests and integration tests to ensure the quality and reliability of the back-end code. `#f03c15`
+# This project incorporates a comprehensive testing strategy that leverages both unit tests and integration tests to ensure the quality and reliability of the back-end code.
 
 ## Tasks
 
-### [0. Parameterize a unit test]()
+### [0. Parameterize a unit test](https://github.com/ehabsmh/alx-backend-python/blob/main/0x03-Unittests_and_integration_tests/test_utils.py)
 Familiarize yourself with the `utils.access_nested_map` function and understand its purpose. Play with it in the Python console to make sure you understand.
 
 In this task you will write the first unit test for `utils.access_nested_map`.
